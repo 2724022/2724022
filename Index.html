@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Escuela</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #ff66c4;
+    }
+    header, footer {
+      background: #ff66c4;
+      color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 5px 10px;
+    }
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #ff66c4;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 15px;
+      color: #000000;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 5px;
+    }
+    section h3 {
+      margin-top: 15px;
+      color: #000000;
+    }
+    /* Estilos para listas de elementos */
+    ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+    /* Formulario de contacto */
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    form input, form textarea, form button, form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #71c0c4;
+      border-radius: 3px;
+    }
+    form button {
+      background: #ff66c4;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #ff66c4;
+    }
+    /* Sección de Donaciones: estilos para botones y formulario dinámico */
+    .donacion-buttons button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 3px;
+      background: #fed6e5;
+      color: #000000;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .donacion-buttons button:hover {
+      background: #ff66c4;
+    }
+    /* Redes sociales */
+    .social-icons {
+      margin-top: 10px;
+    }
+    .social-icons a {
+      color: #000000;
+      margin: 0 8px;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    /* Diseño responsivo */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado y Navegación -->
+  <header>
+    <h1>Go Escuela</h1>
+    <nav>
+      <ul>
+        <li><a href="#nuestra-solucion">Nuestra Solución</a></li>
+        <li><a href="#voluntariados">Voluntariados</a></li>
+        <li><a href="#donaciones">Donaciones</a></li>
+        <li><a href="#blog">Blog / Noticias / Impacto</a></li>
+        <li><a href="#escuelas-beneficiarias">Escuelas Beneficiarias</a></li>
+        <li><a href="#acceso-plataforma">Acceso a la Plataforma</a></li>
+        <li><a href="#cursos-recursos">Cursos y Recursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Nuestra Solución -->
+    <section id="nuestra-solucion">
+      <h2>Nuestra Solución</h2>
+      <img src="https://i.imgur.com/Do43Blr.jpeg" alt="Imagen representativa de solución" style="max-width: 100%; height: auto;">
+      <h3>Descripción de la Atención</h3>
+      <p>Con Go Escuela, las clases se imparten mediante tecnología adaptada a entornos rurales y urbanos, integrando recursos digitales y métodos pedagógicos innovadores para asegurar una experiencia educativa inclusiva.</p>
+      <h3>Demostración del Flujo de Uso</h3>
+      <p>El proceso inicia con el acceso a la plataforma, donde docentes y estudiantes interactúan con contenidos multimedia, realizan actividades y reciben retroalimentación constante.</p>
+      <h3>Diferenciadores</h3>
+      <p>Go Escuela destaca por su enfoque híbrido, flexibilidad de uso sin conexión a internet y su compromiso por cerrar la brecha educativa entre zonas rurales y urbanas.</p>
+    </section>
+
+    <!-- Voluntariados -->
+    <section id="voluntariados">
+      <h2>Voluntariados</h2>
+      <ul>
+        <li>Go into the group</li>
+        <li>Maestro empírico</li>
+        <li>Educador Apasionado</li>
+        <li>Diseño de cartillas</li>
+      </ul>
+    </section>
+
+    <!-- Donaciones -->
+    <section id="donaciones">
+      <h2>Donaciones</h2>
+      <ul>
+        <li>Compra de camisetas</li>
+        <li>Donación en dinero o especie</li>
+        <li>
+          Apadrinamiento:
+          <ul>
+            <li>Aporte único</li>
+            <li>Aporte mensual (con inscripción para cargar un fee mensual)</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="donacion-buttons">
+        <button id="btn-aporte-unico">Aporte Único</button>
+        <button id="btn-aporte-mensual">Aporte Mensual</button>
+      </div>
+      <div id="donacion-formulario">
+        <!-- Aquí se inyectará el formulario según la opción elegida -->
+      </div>
+    </section>
+
+    <!-- Blog / Noticias / Impacto -->
+    <section id="blog">
+      <h2>Blog / Noticias / Impacto</h2>
+      <ul>
+        <li>Eventos</li>
+        <li>Resultados</li>
+        <li>Avances</li>
+      </ul>
+    </section>
+
+    <!-- Escuelas Beneficiarias -->
+    <section id="escuelas-beneficiarias">
+      <h2>Escuelas Beneficiarias</h2>
+      <ul>
+        <li>Departamentos</li>
+        <li>Municipios</li>
+      </ul>
+    </section>
+
+    <!-- Acceso a la Plataforma -->
+    <section id="acceso-plataforma">
+      <h2>Acceso a la Plataforma de Go Escuela</h2>
+      <p>Área exclusiva para docentes y estudiantes inscritos. Inicia sesión para acceder a los contenidos y recursos educativos.</p>
+      <button onclick="alert('Redireccionando al acceso de la plataforma')">Acceder</button>
+    </section>
+
+    <!-- Cursos y Recursos Académicos Gratuitos -->
+    <section id="cursos-recursos">
+      <h2>Cursos y Recursos Académicos Gratuitos</h2>
+      <p>Descubre nuestros cursos y materiales educativos gratuitos, diseñados para fortalecer el aprendizaje de la comunidad.</p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros">
+      <h2>Sobre Nosotros</h2>
+      <ul>
+        <li><strong>Historia:</strong> Origen y evolución de Go Escuela.</li>
+        <li><strong>Misión:</strong> Nuestro compromiso por la educación.</li>
+        <li><strong>Visión:</strong> El futuro de la educación inclusiva.</li>
+        <li><strong>Equipo:</strong> Profesionales y colaboradores que hacen posible nuestra labor.</li>
+        <li><strong>Patrocinadores o Alianzas:</strong> Instituciones y empresas que nos apoyan.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer con iconos de redes sociales -->
+  <footer>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/go_escuela/" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@go_escuela" target="_blank">TikTok</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://www.youtube.com/@Go_Escuela" target="_blank">YouTube</a>
+    </div>
+    <p>&copy; 2025 Go Escuela. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // JavaScript para manejar la selección del formulario de donaciones
+    const btnAporteUnico = document.getElementById('btn-aporte-unico');
+    const btnAporteMensual = document.getElementById('btn-aporte-mensual');
+    const formContainer = document.getElementById('donacion-formulario');
+
+    btnAporteUnico.addEventListener('click', () => {
+      formContainer.innerHTML = `
+        <h3>Aporte Único</h3>
+        <form>
+          <label for="monto-unico">Monto:</label>
+          <input type="number" id="monto-unico" name="monto-unico" required>
+          <button type="submit">Donar</button>
+        </form>
+      `;
+    });
+
+    btnAporteMensual.addEventListener('click', () => {
+      formContainer.innerHTML = `
+        <h3>Aporte Mensual</h3>
+        <form>
+          <label for="monto-mensual">Monto Mensual:</label>
+          <input type="number" id="monto-mensual" name="monto-mensual" required>
+          <label for="tarjeta">Número de tarjeta:</label>
+          <input type="text" id="tarjeta" name="tarjeta" required>
+          <button type="submit">Inscribirme</button>
+        </form>
+      `;
+    });
+  </script>
+</body>
+</html>
+
+
+
