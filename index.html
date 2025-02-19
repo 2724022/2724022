@@ -114,6 +114,17 @@
   height: 30px;
   margin: 0 5px;
 }
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-item {
+  flex: 1;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
     .social-icons a {
       color: #000000;
       margin: 0 8px;
@@ -247,23 +258,54 @@
       </form>
     </section>
 
-    <!-- Sobre Nosotros -->
-    <section id="sobre-nosotros">
-      <h2>Sobre Nosotros</h2>
-      <ul>
-        <li><strong>Historia:</strong> Origen y evolución de Go Escuela.</li>
-        <li><strong>Misión:</strong> Nuestro compromiso por la educación.</li>
-        <li><strong>Visión:</strong> El futuro de la educación inclusiva.</li>
-        <li><strong>Equipo:</strong> Profesionales y colaboradores que hacen posible nuestra labor.</li>
-        <li><strong>Patrocinadores o Alianzas:</strong> Instituciones y empresas que nos apoyan.</li>
-      </ul>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/go_escuela/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/instagram.svg" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@go_escuela" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/tiktok.svg" alt="TikTok"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/linkedin.svg" alt="LinkedIn"></a>
-        <a href="https://www.youtube.com/@Go_Escuela" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/youtube.svg" alt="YouTube"></a>
-      </div>
-    </section>
+   <!-- Sobre Nosotros -->
+<section id="sobre-nosotros">
+  <h2>Sobre Nosotros</h2>
+
+  <div class="about-us-container">
+    <!-- Historia -->
+    <div class="about-us-item">
+      <strong>Historia:</strong>
+      <p>Origen y evolución de Go Escuela.</p>
+      <button onclick="window.open('https://api.whatsapp.com/send?text=Historia de Go Escuela')">Conócenos</button>
+    </div>
+
+    <!-- Misión -->
+    <div class="about-us-item">
+      <strong>Misión:</strong>
+      <p>Nuestro compromiso por la educación.</p>
+      <button onclick="window.open('https://api.whatsapp.com/send?text=Misión de Go Escuela')">Conócenos</button>
+    </div>
+
+    <!-- Visión -->
+    <div class="about-us-item">
+      <strong>Visión:</strong>
+      <p>El futuro de la educación inclusiva.</p>
+      <button onclick="window.open('https://api.whatsapp.com/send?text=Visión de Go Escuela')">Conócenos</button>
+    </div>
+
+    <!-- Equipo -->
+    <div class="about-us-item">
+      <strong>Equipo:</strong>
+      <p>Profesionales y colaboradores que hacen posible nuestra labor.</p>
+      <button onclick="window.open('https://api.whatsapp.com/send?text=Equipo de Go Escuela')">Conócenos</button>
+    </div>
+
+    <!-- Patrocinadores o Alianzas -->
+    <div class="about-us-item">
+      <strong>Patrocinadores o Alianzas:</strong>
+      <p>Instituciones y empresas que nos apoyan.</p>
+      <button onclick="window.open('https://api.whatsapp.com/send?text=Patrocinadores de Go Escuela')">Conócenos</button>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/go_escuela/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/instagram.svg" alt="Instagram"></a>
+    <a href="https://www.tiktok.com/@go_escuela" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/tiktok.svg" alt="TikTok"></a>
+    <a href="https://www.linkedin.com" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://www.youtube.com/@Go_Escuela" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/youtube.svg" alt="YouTube"></a>
+  </div>
+</section>
   </main>
 
   <!-- Footer con iconos de redes sociales -->
